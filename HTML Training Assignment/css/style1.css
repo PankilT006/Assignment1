@@ -33,7 +33,7 @@ body {
 /* Sidebar */
 .sidebar {
     width: 240px;
-    height: 1279px ;
+    height: 1279px;
     background: #ffffff;
     border-right: 1px solid #eee;
     padding: 20px 12px;
@@ -99,7 +99,7 @@ main .top-heading {
     gap: 25px;
     grid-template-columns: auto auto auto auto auto;
     grid-template-rows: 90px;
-        align-content: space-evenly;
+    align-content: space-evenly;
 }
 
 .market-numbers div {
@@ -117,6 +117,7 @@ main .top-heading {
     width: 30px;
     height: 30px;
 }
+
 .market-numbers div p {
     text-align: left;
     font: normal normal medium 25px/33px Roboto;
@@ -124,97 +125,125 @@ main .top-heading {
     color: #3E3E3E;
     opacity: 1;
 }
-.charts{
+
+.charts {
     display: flex;
     flex-direction: row;
     margin-left: 50px;
     gap: 60px;
 }
-.chart1{
-    top: 208px;
-left: 292px;
-width: 1085px;
-height: 400px;
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border-radius: 5px;
-opacity: 1;
-}
-.chart2{
-    top: 330px;
-left: 1124px;
-width: 385px;
-height: 398px;
-/* UI Properties */
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border-radius: 5px;
-opacity: 1;
-}
-.chart1 img{
-    top: 419px;
-left: 398px;
-width: 849px;
-height: 234px;
-position: absolute;
-}
-.chart1 p{
-    top: 352px;
-left: 321px;
 
-/* UI Properties */
-text-align: left;
-font: normal normal medium 22px/29px Roboto;
-letter-spacing: 0px;
-color: #3E3E3E;
-opacity: 1;
+.chart1 {
+    top: 208px;
+    left: 292px;
+    width: 1085px;
+    height: 400px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
 }
-.chart1 span{
+
+.chart2 {
+    top: 330px;
+    left: 1124px;
+    width: 385px;
+    height: 398px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.chart1 img {
+    top: 419px;
+    left: 398px;
+    width: 849px;
+    height: 234px;
+    position: absolute;
+}
+
+.chart1 p {
     top: 352px;
-left: 903px;
-width: 108px;
-height: 16px;
-/* UI Properties */
-text-align: left;
-font: normal normal normal 12px/16px Roboto;
-letter-spacing: 0px;
-color: #ADADAD;
-opacity: 1;
+    left: 321px;
+
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 22px/29px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
 }
-table{
+
+
+
+table {
     margin-top: 70px;
     margin-left: 50PX;
     top: 658px;
-left: 292px;
-width: 1530px;
-height: 558px;
-/* UI Properties */
-background: #FFFFFF 0% 0% no-repeat padding-box;
-border-radius: 5px;
-opacity: 1;
+    left: 292px;
+    width: 1530px;
+    height: 558px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
 }
-table th{
+
+table th {
     text-align: left;
-font-weight: 600;
-letter-spacing: 1.5px;
-color: #ADADAD;
-opacity: 1;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #ADADAD;
+    opacity: 1;
 }
 
 .form-group {
     padding: 10px;
 }
-.form-group img{
+
+.form-group img {
     height: 20px;
     width: 20px;
 }
 
-#innermain{
-    margin: 40px;
+#innermain {
+    margin: 20px;
 }
-div .mar12{
+
+div .mar12 {
     display: flex;
     flex-direction: row;
 }
-div .mar123{
+
+div .mar123 {
     display: flex;
     flex-direction: column;
+}
+
+.form-snackbar p {
+    border: 1px solid red;
+    width: 550px;
+    height: 45px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-group input:hover {
+    border: 1px solid red;
+}
+
+.form-group .actionc button {
+    border-radius: 20px;
+}
+
+.form-group .actionc button:hover {
+    background-color: #d93025;
+}
+
+.charts button {
+    background-color: #FFFFFF;
+    border: 0;
+    color: #3E3E3E;
+   
 }
