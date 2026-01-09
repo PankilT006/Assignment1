@@ -36,16 +36,8 @@ body {
     font-weight: 900;
 }
 
-@media (max-width: 992px) {
-    .hero-image-wrapper {
-        max-width: 350px;
-    }
-}
-
 @media (max-width: 576px) {
-    .hero-image-wrapper {
-        max-width: 280px;
-    }
+
 
     .fs-3 {
         font-size: 1.75rem !important;
@@ -60,16 +52,29 @@ body {
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width:719px) {
     .hero-image-wrapper {
-        max-width: 240px;
+        display: none;
     }
 
+    .btn-lg {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 360px) {
     .container {
         padding: 0 15px;
     }
 
     .rounded-4 {
         border-radius: 1rem !important;
+    }
+}
+
+@media (max-width:991) {
+    .text-icon-wrapper {
+        text-align: center;
     }
 }
