@@ -3,7 +3,7 @@ body {
 }
 
 .search-box {
-  background: #f5f6f8;
+  background: white ;
   border-radius: 30px;
   padding: 8px 16px;
   width: 100%;
@@ -18,17 +18,11 @@ body {
 }
 
 .search-box input::placeholder {
-  color: #999;
+  color: gray;
 }
 
-.notification-dot {
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 2px solid white;
+.card{
+  border: 0;
 }
 
 aside {
@@ -70,13 +64,13 @@ aside {
 main {
   flex: 1;
   margin-top: 30 px;
-  padding: 30px;
+  padding:25px;
   background: #FAFAFA;
 }
 
 .form-module {
   background: white;
-  padding: 20px;
+  padding: 15px;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -135,11 +129,13 @@ main {
 
 .form-group {
   margin-bottom: 1.5rem;
+  padding-left: 10px;
 }
 
 .form-control {
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 1.5rem; */
 }
+
 
 .form-group .row {
   margin-left: -10px;
@@ -232,6 +228,11 @@ main .btn-group button {
   height: 100%;
 }
 
+li.nav-link {
+  border: 0;
+  color: #d32f2f;
+}
+
 @media (max-width:991px) {
   main .innermain {
     padding-top: 30px;
@@ -240,6 +241,7 @@ main .btn-group button {
   main #formhead {
     padding-top: 30px;
   }
+ 
 
 }
 
