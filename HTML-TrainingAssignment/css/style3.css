@@ -9,6 +9,10 @@ body {
   width: 100%;
   max-width: 400px;
 }
+.modal-backdrop{
+  height: 100%;
+  width: 100%;
+}
 
 .search-box input {
   background: transparent;
@@ -74,6 +78,15 @@ main {
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+.form-control:disabled{
+  background-color: transparent;
+  border: 1px gray dotted;
+}
+.form-check-input:checked {
+  background-color: red;
+  border: 2px solid red;
+}
+
 
 .section-title {
   font-size: 20px;
@@ -207,6 +220,13 @@ main .btn-group button {
   font-weight: 500;
   color: #3E3E3E;
 }
+.card-body a{
+  font-weight: 500; 
+  font-size: large;
+   color: red;
+   text-decoration: none;
+
+}
 
 .legend-item {
   margin-left: 40px;
@@ -228,9 +248,13 @@ main .btn-group button {
   height: 100%;
 }
 
-li.nav-link {
+.nav-link.active {
   border: 0;
-  color: #d32f2f;
+  color: red  ;
+}
+
+.nav-link{
+  color:#3E3E3E;
 }
 
 @media (max-width:991px) {
@@ -244,7 +268,11 @@ li.nav-link {
  
 
 }
-
+@media (max-width:778px){
+  #minscreen{
+    margin-bottom: 20px;
+  }
+}
 @media (min-width: 992px) {
   .main-content {
     padding-top: 60px;

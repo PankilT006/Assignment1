@@ -12,49 +12,57 @@
 
 <body>
 
-  <nav class="navbar navbar-lg bg-white border-bottom shadow-sm  fixed-top">
+  <nav class="navbar navbar-lg bg-white border-bottom  fixed-top">
     <div class="container-fluid px-4">
-      <div class="d-flex align-items-center gap-3">
+  
+      <div class="d-flex align-items-center gap-3 gap-lg-4 flex-grow-1">
+  
         <button class="btn d-lg-none p-0 border-0" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#sidebarOffcanvas">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a href="#" class="navbar-brand py-0">
-          <img src="./images/header-logo.svg" alt="logo" height="30">
+  
+        <a href="#" class="navbar-brand py-0 me-0 me-lg-3">
+          <img src="./images/header-logo.svg" alt="logo" height="32">
         </a>
+  
+        <form class="d-none d-md-flex align-items-center search-box flex-grow-1 ms-lg-3"
+              style="max-width: 420px;">
+          <img src="./images/search-icon.svg" alt="search" height="22" class="ms-3 me-2">
+          <input class="form-control border-0 shadow-none bg-transparent m-0 p-0"
+                 type="search" placeholder="Search" 
+                 style="height: 38px;">
+        </form>
       </div>
-
+  
       <div class="d-flex align-items-center gap-3 ms-auto">
-
+  
         <button class="btn p-0 d-md-none" data-bs-toggle="modal" data-bs-target="#searchModal">
           <img src="./images/search-icon.svg" alt="search" height="22">
         </button>
-
-        <form class="d-none d-md-flex align-items-center search-box">
-          <img src="./images/search-icon.svg" alt="search" height="18" class="me-2">
-          <input class="form-control border-0 shadow-none" type="search" placeholder="Search">
-        </form>
-
+  
         <div class="position-relative">
           <a href="#" class="btn p-0">
             <img src="./images/notification-icon.svg" alt="notifications" height="22">
           </a>
         </div>
-
+  
         <div class="dropdown">
           <a class="dropdown-toggle d-flex align-items-center gap-2 text-dark text-decoration-none" href="#"
             role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="./images/profile.png" alt="profile" class="rounded-circle" height="32">
-            <span class="d-none d-sm-inline">John Doe</span>
+            <span class="d-none d-sm-inline ms-1">John Doe</span>
           </a>
           <ul class="dropdown-menu dropdown-menu-end">
             <li><a class="dropdown-item" href="#">My Profile</a></li>
             <li><a class="dropdown-item" href="#">Log Out</a></li>
           </ul>
         </div>
+  
       </div>
     </div>
   </nav>
+
 
   <div class="modal fade.w-100.h-100" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
     aria-hidden="true">
@@ -76,11 +84,11 @@
       <ul class="sidebar-menu list-unstyled m-0 pt-4">
         <li class="active">
           <img src="./images/dashboard-active.svg" alt="Dashboard">
-          <span>Dashboard</span>
+          <span><a href="./dashboard.html" style="text-decoration: none; color: #555;">Dashboard</a></span>
         </li>
         <li>
           <img src="./images/graph-default.svg" alt="Analysis">
-          <span>Analysis</span>
+          <span><a href="./innerpage1.html" style="text-decoration: none; color: #555;">Analysis</a></span>
         </li>
         <li>
           <img src="./images/inbox-default.svg" alt="Inbox">
@@ -114,11 +122,11 @@
         <ul class="sidebar-menu list-unstyled m-0 pt-4">
           <li class="active">
             <img src="./images/dashboard-active.svg" alt="Dashboard">
-            <span>Dashboard</span>
+            <span><a href="./dashboard.html" style="text-decoration: none; color: #555;">Dashboard</a></span>
           </li>
           <li>
             <img src="./images/graph-default.svg" alt="Analysis">
-            <span>Analysis</span>
+            <span><a href="./innerpage1.html" style="text-decoration: none; color: #555;">Analysis</a></span>
           </li>
           <li>
             <img src="./images/inbox-default.svg" alt="Inbox">
@@ -170,18 +178,18 @@
         <div class="section-title">Two Column</div>
         <div class="form-group">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6"  id="minscreen">
               <input type="text" class="form-control" placeholder="First name">
             </div>
-            <div class="col-md-6 mt-4">
+            <div class="col-md-6 "  id="minscreen">
               <input type="text" class="form-control" placeholder="John Doe">
             </div>
           </div>
-          <div class="row mt-3">
-            <div class="col-md-6 mt-1">
+          <div class="row mt-3">    
+            <div class="col-md-6 " id="minscreen">
               <input type="password" class="form-control" placeholder="Password">
             </div>
-            <div class="col-md-6 mt-4">
+            <div class="col-md-6 ">
               <select class="form-select">
                 <option>Default select</option>
                 <option>Option 2</option>
@@ -194,13 +202,13 @@
         <div class="section-title">Three Column</div>
         <div class="form-group">
           <div class="row">
-            <div class="col-md-4 ">
+            <div class="col-md-4"  id="minscreen">
               <input type="text" class="form-control" placeholder="Focus">
             </div>
-            <div class="col-md-4 mt-4">
+            <div class="col-md-4 "  id="minscreen">
               <input type="password" class="form-control" placeholder="Password">
             </div>
-            <div class="col-md-4 mt-4">
+            <div class="col-md-4 "  id="minscreen">
               <input type="text" class="form-control" placeholder="John Doe" disabled style="border-style: dotted;">
             </div>
           </div>
@@ -213,14 +221,14 @@
               <input type="text" class="form-control" placeholder="Designation">
               <small class="help-block">Enter valid data</small>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3"  id="minscreen">
               <input type="text" class="form-control" placeholder="Name">
               <small class="help-block">Enter your full name as per ID</small>
             </div>
-            <div class="col-md-3 mt-3">
+            <div class="col-md-3 " id="minscreen">
               <input type="text" class="form-control" placeholder="John Doe">
             </div>
-            <div class="col-md-3 mt-4">
+            <div class="col-md-3 "  id="minscreen">
               <select class="form-select">
                 <option>Default select</option>
                 <option>Option 2</option>
@@ -334,7 +342,8 @@
       </div>
     </main>
   </div>
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/filehandling.js"></script>
 </body>
 
 </html>
