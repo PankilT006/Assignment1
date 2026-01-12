@@ -48,17 +48,20 @@ body {
     }
 
     .btn-lg {
-        width: 100%;
+        width: 80%;
     }
 }
 
-@media (max-width:719px) {
-    .hero-image-wrapper {
+@media (max-width:770px) {
+  .container  .hero-image-wrapper {
         display: none;
     }
 
     .btn-lg {
         width: 100%;
+    }
+    .text-wrapper{
+        width: 100vw;
     }
 
 }
@@ -77,4 +80,4 @@ body {
     .text-icon-wrapper {
         text-align: center;
     }
-}
+}   

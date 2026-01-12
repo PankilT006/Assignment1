@@ -24,6 +24,12 @@ body {
 .search-box input::placeholder {
   color: gray;
 }
+#searchModal{
+  padding: 20px;
+  height: 150px;
+  margin-top: 0;
+
+}
 
 .card{
   border: 0;
@@ -140,15 +146,30 @@ main {
   border-color: #d93025;
 }
 
-.form-group {
+.form-select {
+  margin-bottom: 1.5rem;
+  padding: 17px 0px 17px 0px;
+
+}
+.form-floating{
   margin-bottom: 1.5rem;
   padding-left: 10px;
 }
-
 .form-control {
   /* margin-bottom: 1.5rem; */
 }
-
+.form-floating>.form-control-plaintext~label,.form-floating>.form-control:focus~label,.form-floating>.form-control:not(:placeholder-shown)~label,.form-floating>.form-select~label {
+  transform: scale(.85) translateY(-26px) translateX(25px)
+}
+.form-floating>.form-control:focus~label{
+  background-color: white;
+  padding-left: 0;
+  padding-right: 0;
+  
+}
+.form-floating>label {
+  padding: 11px 15px;
+}
 
 .form-group .row {
   margin-left: -10px;

@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Innerpage</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/style3.css">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -161,33 +161,38 @@
 
         <div class="section-title mt-2  ">One Column</div>
 
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Name">
+        <div class=" form-floating">
+          <input type="text" id="floatingInput1" class="form-control" placeholder="  Name">
+          <label for="floatingInput1">Name</label>
         </div>
-        <div class="form-group">
-          <select class="form-select">
+        <div class=" form-group">
+          <select class="form-select" style="margin-left: 10px;">
             <option>Default select</option>
             <option>Option 2</option>
             <option>Option 3</option>
           </select>
         </div>
-        <div class="form-group">
-          <textarea class="form-control" rows="4" placeholder="Multiple Line"></textarea>
+        <div class=" form-floating">
+          <textarea id="floatingInput2" class="form-control" rows="4" placeholder="Multiple Line"></textarea>
+          <label for="floatingInput2">Multiline</label>
         </div>
 
         <div class="section-title">Two Column</div>
-        <div class="form-group">
+        <div class=" form-group">
           <div class="row">
-            <div class="col-md-6"  id="minscreen">
-              <input type="text" class="form-control" placeholder="First name">
+            <div class="col-md-6 form-floating"  id="minscreen">
+              <input type="text"id="floatingInput3" class="form-control" placeholder="Name">
+              <label for="floatingInput3">Name</label>
             </div>
-            <div class="col-md-6 "  id="minscreen">
-              <input type="text" class="form-control" placeholder="John Doe">
+            <div class="col-md-6 form-floating"  id="minscreen">
+              <input type="text" id="floatingInput4" class="form-control" placeholder="John Doe">
+              <label for="floatingInput4">Username</label>
             </div>
           </div>
-          <div class="row mt-3">    
-            <div class="col-md-6 " id="minscreen">
-              <input type="password" class="form-control" placeholder="Password">
+          <div class="row  ">    
+            <div class="col-md-6  form-floating" id="minscreen">
+              <input type="password" id="floatingPassword" class="form-control" placeholder="Password">
+              <label for="floatingPassword">Password</label>
             </div>
             <div class="col-md-6 ">
               <select class="form-select">
@@ -200,37 +205,42 @@
         </div>
 
         <div class="section-title">Three Column</div>
-        <div class="form-group">
+        <div class=" form-floating">
           <div class="row">
-            <div class="col-md-4"  id="minscreen">
-              <input type="text" class="form-control" placeholder="Focus">
+            <div class="col-md-4 form-floating"  id="minscreen">
+              <input type="text"id="floatingInput5" class="form-control" placeholder="Focus">
+              <label for="floatingInput5">Focus</label>
             </div>
-            <div class="col-md-4 "  id="minscreen">
-              <input type="password" class="form-control" placeholder="Password">
+            <div class="col-md-4 form-floating "  id="minscreen">
+              <input type="password" id="floatingPassword1" class="form-control" placeholder="Password">
+              <label for="floatingPassword1">Password</label>
             </div>
-            <div class="col-md-4 "  id="minscreen">
-              <input type="text" class="form-control" placeholder="John Doe" disabled style="border-style: dotted;">
+            <div class="col-md-4 form-group"  id="minscreen">
+              <input type="text" class="form-control" placeholder="John Doe" disabled style="border-style: dotted; padding: 15px;">
             </div>
           </div>
         </div>
 
         <div class="section-title">Four Column</div>
-        <div class="form-group">
+        <div class=" form-floating">
           <div class="row">
-            <div class="col-md-3 mb-3">
-              <input type="text" class="form-control" placeholder="Designation">
+            <div class="col-md-3 mb-3 form-floating">
+              <input type="text"id="floatingInput6" class="form-control" placeholder="Designation">
+              <label for="floatingInput6">Designation</label>
               <small class="help-block">Enter valid data</small>
             </div>
-            <div class="col-md-3"  id="minscreen">
-              <input type="text" class="form-control" placeholder="Name">
+            <div class="col-md-3 form-floating"  id="minscreen">
+              <input type="text" id="floatingInput7" class="form-control" placeholder="Name">
+              <label for="floatingInput7">Name</label>
               <small class="help-block">Enter your full name as per ID</small>
             </div>
-            <div class="col-md-3 " id="minscreen">
-              <input type="text" class="form-control" placeholder="John Doe">
+            <div class="col-md-3 form-floating " id="minscreen">
+              <input type="text" id="floatingInput8" class="form-control" placeholder="John Doe">
+              <label for="floatingInput8">Username</label>
             </div>
             <div class="col-md-3 "  id="minscreen">
               <select class="form-select">
-                <option>Default select</option>
+                <option> Default select</option>
                 <option>Option 2</option>
                 <option>Option 3</option>
               </select>
@@ -249,7 +259,7 @@
           <span class="file-name">No item Selected</span>
         </div>
 
-        <div class="form-group ">
+        <div class=" form-group ">
           <label class="form-label section-title">Radio Button</label>
           <div class="ms-3">
             <div class="form-check form-check-inline">
@@ -263,7 +273,7 @@
           </div>
         </div>
 
-        <div class="form-group">
+        <div class=" form-group">
           <label class="form-label section-title">Checkbox</label>
           <div class="ms-3">
             <div class="form-check form-check-inline">
