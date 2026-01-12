@@ -70,6 +70,15 @@ aside {
   color: #d93025;
   font-weight: 500;
 }
+.sidebar-menu li.is-active {
+  background: #f5f6f8;
+  color: #d93025;
+  font-weight: 500;
+}
+
+.sidebar-menu li.is-active span a {
+  color: #d93025 !important; 
+}
 
 main {
   flex: 1;
@@ -159,7 +168,7 @@ main {
   margin-left: 10px;
 }
 .form-floating>.form-control-plaintext~label,.form-floating>.form-control:focus~label,.form-floating>.form-control:not(:placeholder-shown)~label,.form-floating>.form-select~label {
-  transform: scale(.85) translateY(-26px) translateX(25px)
+  transform: scale(.85) translateY(-30px) translateX(25px)
 }
 .form-floating>.form-control:focus~label{
   background-color: white;
@@ -167,9 +176,22 @@ main {
   padding-right: 0;
   
 }
-.form-floating>label {
-  padding: 11px 15px;
+.form-floating>label{
+  height: 60px;
 }
+.btn-outline-secondary{
+  color: red;
+  background-color:white;
+  border:1px solid red;
+}
+
+.form-floating>label {
+  padding: 16px 22px;
+}
+.nav-tabs{
+  --bs-nav-tabs-link-active-color: red;
+}
+
 
 .form-group .row {
   margin-left: -10px;
@@ -220,12 +242,19 @@ main {
 .custom-file-upload label:hover {
   background-color: #d32f2f;
   color: white;
+ 
 }
 
 .custom-file-upload .upload-icon {
   width: 20px;
   height: 20px;
+  transition: filter 0.3s ease;
 }
+.custom-file-upload label:hover .upload-icon {
+  
+  filter: invert(1) grayscale(300%) brightness(100%);
+}
+
 
 .file-name {
   font-size: 16px;
@@ -269,14 +298,11 @@ main .btn-group button {
   height: 100%;
 }
 
-.nav-link.active {
-  border: 0;
-  color: red  ;
+.nav{
+  --bs-nav-link-color: #070808;
+  --bs-nav-link-hover-color: red;
 }
 
-.nav-link{
-  color:#3E3E3E;
-}
 
 @media (max-width:991px) {
   main .innermain {
@@ -286,6 +312,9 @@ main .btn-group button {
   main #formhead {
     padding-top: 30px;
   }
+  .ms-3 {
+    margin-left: 8rem !important;
+}
  
 
 }

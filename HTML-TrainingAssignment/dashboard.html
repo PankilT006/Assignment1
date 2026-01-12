@@ -80,8 +80,8 @@
   <div class="d-flex main-content"> 
 
     <aside class="d-none d-lg-block bg-white border-end" style="width: 240px; min-height: 100vh;">
-      <ul class="sidebar-menu list-unstyled m-0 pt-4">
-        <li >
+      <ul class="sidebar-menu list-unstyled m-0 pt-4 ">
+        <li class="is-active">
           <img src="./images/dashboard-active.svg" alt="Dashboard">
           <span><a href="./dashboard.html" style="text-decoration: none; color: #555;">Dashboard</a></span>
         </li>
@@ -119,7 +119,7 @@
       </div>
       <div class="offcanvas-body p-0">
         <ul class="sidebar-menu list-unstyled m-0 pt-4">
-          <li class="active">
+          <li class="is-active">
             <img src="./images/dashboard-active.svg" alt="Dashboard">
             <span><a href="./dashboard.html" style="text-decoration: none; color: #555;">Dashboard</a></span>
           </li>
@@ -154,7 +154,7 @@
     <main class="flex-grow-1 p-4 p-md-5 bg-light">
       <h2 class="innermain mb-4  ms-2 ">Dashboard</h2>
 
-      <div class="row g-4 mb-5 row-cols-2 row-cols-md-3 row-cols-xl-5">
+      <div class="row g-4 mb-5 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5">
     
         <div class="col">
           <div class="card h-100 ">
@@ -222,23 +222,29 @@
           <div class="card   h-100">
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-center mb-4">
-                <h5 class="mb-0">Sales</h5>
-                <div class="btn-group">
-                  <button class="btn btn-outline-secondary btn-sm">Weekly</button>
-                  <button class="btn btn-outline-secondary btn-sm">Monthly</button>
-                  <button class="btn btn-outline-secondary btn-sm">Yearly</button>
-                </div>
+                <h4 class="mb-0 pb-4">Sale</h4>
+                <ul class="nav nav-tabs mb-3  " id="myTab">
+                  <li class="nav-item ">
+                    <button class="nav-link  " id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button">Weekly</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button">Monthly</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link active" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button">Yearly</button>
+                  </li>
+                </ul>
               </div>
-              <img src="./images/data-graph.png" alt="Sales Graph" class="img-fluid">
+              <img src="./images/data-graph.png" alt="Sales Graph" class="img-fluid"  style="min-width: 90%;">
             </div>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="card   h-100">
-            <div class="card-body text-center">
-              <h5 class="mb-4">Sales By Country</h5>
+            <div class="card-body  ">
+              <h4 class="mb-4 align-items-left">Sales By Country</h4>
 
-              <img src="./images/pie-chart.svg" alt="Pie Chart" class="img-fluid mb-4" style="max-width: 100%;">
+              <img src="./images/pie-chart.svg" alt="Pie Chart" class="img-fluid mb-4 ms-3 "  >
 
               <div class="row justify-content-center gx-4 ">
                 <div class="col-6 col-sm-6 mb-3">
@@ -275,7 +281,7 @@
 
       <div class="card ">
         <div class="card-body">
-          <h4 class="mb-4">Invoices <span style=" float: right; margin-right: 10px; font-weight :400;"> <a href="#">View all</a></span>
+          <h4 class="mb-4">Invoices <span style=" float: right; margin-right: 10px; font-weight: 100;"> <a href="#">View all</a></span>
           </h4>
           <div class="table-responsive">
             <table class="table table-hover align-middle text-nowrap">
@@ -351,6 +357,7 @@
   </div>
 
   <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/buttonchart.js  "></script>
 </body>
 
 </html>
