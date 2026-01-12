@@ -65,7 +65,7 @@ aside {
   color: #d93025;
 }
 
-.sidebar-menu li.active {
+.sidebar-menu li:active {
   background: #f5f6f8;
   color: #d93025;
   font-weight: 500;
@@ -155,8 +155,8 @@ main {
   margin-bottom: 1.5rem;
   padding-left: 10px;
 }
-.form-control {
-  /* margin-bottom: 1.5rem; */
+.form-group {
+  margin-left: 10px;
 }
 .form-floating>.form-control-plaintext~label,.form-floating>.form-control:focus~label,.form-floating>.form-control:not(:placeholder-shown)~label,.form-floating>.form-select~label {
   transform: scale(.85) translateY(-26px) translateX(25px)
