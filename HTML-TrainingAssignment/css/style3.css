@@ -190,6 +190,10 @@ main {
 }
 .nav-tabs{
   --bs-nav-tabs-link-active-color: red;
+  --bs-nav-tabs-link-hover-border-color: transparent transparent transparent;
+  --bs-nav-tabs-link-active-border-color: transparent transparent red;
+  /* border-bottom: transparent; */
+
 }
 
 
